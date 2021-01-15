@@ -28,6 +28,12 @@
     </a>
 <% } %>
 
+<% if (theme.socialLink.wechat) { %>
+    <a href="<%= theme.socialLink.wechat %>" class="tooltipped" target="_blank" data-tooltip="微信联系我: <%= theme.socialLink.weixin %>" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
+    </a>
+<% } %>
+
 <% if (theme.socialLink.weibo) { %>
     <a href="<%= theme.socialLink.weibo %>" class="tooltipped" target="_blank" data-tooltip="关注我的微博: <%= theme.socialLink.weibo %>" data-position="top" data-delay="50">
         <i class="fab fa-weibo"></i>
@@ -45,3 +51,4 @@
         <i class="fas fa-rss"></i>
     </a>
 <% } %>
+
